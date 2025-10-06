@@ -1,13 +1,26 @@
 {
   "name": "diy-yard-pro",
   "version": "1.0.0",
-  "description": "Professional DIY landscaping and hardscaping blog",
+  "description": "Professional DIY landscaping and hardscaping blog for US homeowners",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
+    "build": "echo 'No build step required'",
     "deploy": "netlify deploy --prod"
   },
-  "keywords": ["diy", "landscaping", "hardscaping", "blog"],
+  "keywords": [
+    "diy",
+    "landscaping",
+    "hardscaping",
+    "blog",
+    "affiliate",
+    "monetization"
+  ],
   "author": "DIY Yard Pro",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/diy-yard-pro.git"
+  },
+  "homepage": "https://diy-yard-pro.netlify.app"
 }

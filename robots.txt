@@ -1,3 +1,26 @@
 User-agent: *
 Allow: /
-Sitemap: https://diyyardpro.com/sitemap.xml
+
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+Disallow: /admin/
+Disallow: /.netlify/
+
+Sitemap: https://diy-yard-pro.netlify.app/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: PinterestBot
+Allow: /

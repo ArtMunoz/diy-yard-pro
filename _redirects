@@ -1,2 +1,13 @@
 /posts/* /post/:splat 301
+/blog/* /post/:splat 301
+/tutorials/* /#projects 302
+/tools/* /#tools 302
+/newsletter /.netlify/functions/newsletter 200
+/subscribe /.netlify/functions/newsletter 200
+/youtube https://youtube.com/@diyyardpro 302
+/instagram https://instagram.com/diyyardpro 302
+/pinterest https://pinterest.com/diyyardpro 302
+/amazon/* https://amazon.com/:splat 302
+/homedepot/* https://homedepot.com/:splat 302
+/lowes/* https://lowes.com/:splat 302
 /* /index.html 200

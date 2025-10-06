@@ -2,16 +2,13 @@
 
 Professional DIY landscaping and hardscaping blog for US homeowners.
 
-## Features
-- Custom CMS
-- Affiliate marketing ready
-- Mobile responsive
+## 🌟 Features
+
+- Custom blog with external CSS
+- 3 complete articles with professional content
+- Mobile responsive design
 - SEO optimized
+- AdSense ready
+- Affiliate marketing integration
 
-## Live Site
-Coming soon!
-
-## Tech Stack
-- HTML5, CSS3, JavaScript
-- Netlify hosting
-- No framework needed
+## 📁 Project Structure
