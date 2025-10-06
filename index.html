@@ -35,6 +35,16 @@
     
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1840897');
+    </script>
+    <!-- End MailerLite Universal -->
 </head>
 <body>
     <header>
@@ -355,6 +365,100 @@
         </section>
     </main>
 
+    <!-- NEWSLETTER SECTION -->
+    <!-- Agregar esto ANTES del footer en tu index.html -->
+
+    <section class="newsletter-section" style="background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); color: white; padding: 4rem 0;">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">🌿 Join Our DIY Community</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">
+                Get weekly landscaping tips, project ideas, and exclusive guides delivered to your inbox!
+            </p>
+        
+            <form id="newsletter-form" class="newsletter-form" style="max-width: 600px; margin: 0 auto;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <input 
+                        type="email" 
+                        id="newsletter-email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required
+                        style="flex: 1; min-width: 250px; padding: 1rem 1.5rem; border: none; border-radius: 50px; font-size: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
+                    >
+                    <button 
+                        type="submit" 
+                        class="cta-button"
+                        style="padding: 1rem 2.5rem; background: #ff9800; color: white; border: none; border-radius: 50px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; white-space: nowrap; box-shadow: 0 4px 6px rgba(0,0,0,0.2);"
+                        onmouseover="this.style.background='#f57c00'; this.style.transform='translateY(-2px)'"
+                        onmouseout="this.style.background='#ff9800'; this.style.transform='translateY(0)'"
+                    >
+                        Subscribe Free
+                    </button>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    ✓ No spam, ever. Unsubscribe anytime. Read our <a href="privacy-policy.html" style="color: #fff; text-decoration: underline;">Privacy Policy</a>.
+                </p>
+            
+                <!-- Success/Error Messages -->
+                <div id="newsletter-success" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(76, 175, 80, 0.2); border-radius: 8px; border: 2px solid #4caf50;">
+                    <p style="margin: 0; font-weight: 600;">🎉 Success! Check your email to confirm your subscription.</p>
+                </div>
+                <div id="newsletter-error" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(244, 67, 54, 0.2); border-radius: 8px; border: 2px solid #f44336;">
+                    <p style="margin: 0; font-weight: 600;">❌ Oops! Something went wrong. Please try again.</p>
+                </div>
+            </form>
+        
+            <div style="margin-top: 2.5rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; opacity: 0.9;">
+                <div>
+                    <div style="font-size: 2rem; font-weight: 700;">15K+</div>
+                    <div style="font-size: 0.9rem;">Subscribers</div>
+                </div>
+                <div>
+                    <div style="font-size: 2rem; font-weight: 700;">50+</div>
+                    <div style="font-size: 0.9rem;">Projects Shared</div>
+                </div>
+                <div>
+                    <div style="font-size: 2rem; font-weight: 700;">100%</div>
+                    <div style="font-size: 0.9rem;">Free Content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT para el Newsletter Form -->
+    <script>
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+    
+        const email = document.getElementById('newsletter-email').value;
+        const successMsg = document.getElementById('newsletter-success');
+        const errorMsg = document.getElementById('newsletter-error');
+    
+        // Ocultar mensajes previos
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+    
+        // OPCIÓN 1: Integrar con tu servicio de email marketing aquí
+        // Ver instrucciones abajo para Mailchimp, ConvertKit, etc.
+    
+        // OPCIÓN 2: Simulación (para pruebas - reemplazar con integración real)
+        setTimeout(() => {
+            successMsg.style.display = 'block';
+            document.getElementById('newsletter-email').value = '';
+        
+            // Analytics event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'sign_up', {
+                    'method': 'newsletter'
+                });
+            }
+        }, 500);
+    
+        // Si hay error, mostrar:
+        // errorMsg.style.display = 'block';
+    });
+    </script>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -396,8 +500,8 @@
                     <a href="#">About the Author</a>
                     <a href="#">Contact</a>
                     <a href="#">Newsletter</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
                     <a href="#">Affiliate Disclosure</a>
                 </div>
             </div>
