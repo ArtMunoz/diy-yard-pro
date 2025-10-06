@@ -1,0 +1,13 @@
+{
+  "name": "diy-yard-pro",
+  "version": "1.0.0",
+  "description": "Professional DIY landscaping and hardscaping blog",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": ["diy", "landscaping", "hardscaping", "blog"],
+  "author": "DIY Yard Pro",
+  "license": "MIT"
+}
