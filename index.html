@@ -7,7 +7,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-K663C48D8T');
     </script>
 
@@ -30,7 +29,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -43,7 +42,6 @@
         (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
         ml('account', '1840897');
     </script>
-    <!-- End MailerLite Universal -->
 
     <!-- Google Adsense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2556661491647206"
@@ -51,7 +49,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">🌿 DIY Yard Pro</a>
             <div class="nav-links">
@@ -68,7 +66,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-badge">✨ Trusted by Homeowners Across America</div>
-            <h1>Transform Your Yard with <span style="color: #16a34a;">Professional</span> DIY Projects</h1>
+            <h1>Transform Your Yard with <span style="color: var(--primary);">Professional</span> DIY Projects</h1>
             <p class="hero-subtitle">
                 Learn landscaping and hardscaping from someone who's done it for 10+ years. 
                 Step-by-step guides that save you thousands.
@@ -78,261 +76,266 @@
                 <a href="#newsletter" class="cta-button secondary">Get Free Guide</a>
             </div>
             
-            <!-- Stats -->
-            <div style="display: flex; gap: 3rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: bold; color: #16a34a;">$2,000+</div>
-                    <div style="color: #666;">Average Savings</div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">$2,000+</div>
+                    <div class="stat-label">Average Savings</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: bold; color: #16a34a;">10+</div>
-                    <div style="color: #666;">Years Experience</div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; font-weight: bold; color: #16a34a;">100%</div>
-                    <div style="color: #666;">DIY Friendly</div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">DIY Friendly</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Latest Tutorials Section -->
-    <section style="padding: 4rem 2rem; background: #f9fafb;" id="articles">
-        <div class="container" style="max-width: 1200px; margin: 0 auto;">
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Latest Tutorials</h2>
-                <p style="color: #666; font-size: 1.1rem;">
-                    Step-by-step guides to transform your outdoor space
-                </p>
+    <!-- Articles Section -->
+    <section class="articles-section" id="articles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Tutorials</h2>
+                <p class="section-subtitle">Step-by-step guides to transform your outdoor space</p>
             </div>
 
-            <!-- Articles Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-                
+            <div class="articles-grid">
                 <!-- Article 1: Stone Patio -->
-                <article style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.07); transition: transform 0.3s;">
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 2rem; text-align: center;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🏗️</div>
-                        <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">HARDSCAPING</span>
+                <article class="article-card">
+                    <div class="article-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="article-icon">🗿</div>
+                        <span class="article-badge">HARDSCAPING</span>
                     </div>
-                    <div style="padding: 2rem;">
-                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+                    <div class="article-body">
+                        <div class="article-meta">
                             <span>⏱️ 15 min read</span>
                             <span>🔧 Intermediate</span>
                         </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1f2937;">
-                            How to Build a Stone Patio: Complete Guide
-                        </h3>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
+                        <h3 class="article-title">How to Build a Stone Patio: Complete Guide</h3>
+                        <p class="article-description">
                             Learn to build a professional-quality stone patio and save $3,000-$5,000. Includes materials list, step-by-step instructions, and pro tips.
                         </p>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <a href="articles/stone-patio-construction.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+                        <div class="article-footer">
+                            <a href="articles/stone-patio-construction.html" class="article-link">
                                 Read Tutorial →
                             </a>
-                            <span style="color: #16a34a; font-weight: 600;">Save $3,000+</span>
+                            <span class="article-savings">Save $3,000+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 2: Low-Maintenance Landscaping -->
-                <article style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.07); transition: transform 0.3s;">
-                    <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 3rem 2rem; text-align: center;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🌱</div>
-                        <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">LANDSCAPING</span>
+                <article class="article-card">
+                    <div class="article-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                        <div class="article-icon">🌱</div>
+                        <span class="article-badge">LANDSCAPING</span>
                     </div>
-                    <div style="padding: 2rem;">
-                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+                    <div class="article-body">
+                        <div class="article-meta">
                             <span>⏱️ 12 min read</span>
                             <span>🌿 Easy</span>
                         </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1f2937;">
-                            Complete Guide to Low-Maintenance Landscaping
-                        </h3>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
+                        <h3 class="article-title">Complete Guide to Low-Maintenance Landscaping</h3>
+                        <p class="article-description">
                             Create a beautiful landscape that practically takes care of itself. Save 100+ hours per year and reduce water bills by 70%.
                         </p>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <a href="articles/low-maintenance-landscaping.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+                        <div class="article-footer">
+                            <a href="articles/low-maintenance-landscaping.html" class="article-link">
                                 Read Tutorial →
                             </a>
-                            <span style="color: #16a34a; font-weight: 600;">Save 100+ hrs/yr</span>
+                            <span class="article-savings">Save 100+ hrs/yr</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 3: Budget Backyard -->
-                <article style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.07); transition: transform 0.3s;">
-                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 3rem 2rem; text-align: center;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">💰</div>
-                        <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">BUDGET</span>
+                <article class="article-card">
+                    <div class="article-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="article-icon">💰</div>
+                        <span class="article-badge">BUDGET</span>
                     </div>
-                    <div style="padding: 2rem;">
-                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+                    <div class="article-body">
+                        <div class="article-meta">
                             <span>⏱️ 10 min read</span>
                             <span>💵 Budget-Friendly</span>
                         </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1f2937;">
-                            Complete Backyard Makeover Under $2,000
-                        </h3>
-                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
+                        <h3 class="article-title">Complete Backyard Makeover Under $2,000</h3>
+                        <p class="article-description">
                             Transform your entire backyard on a tight budget. Complete timeline, shopping list, and money-saving strategies included.
                         </p>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <a href="articles/budget-backyard-makeover.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+                        <div class="article-footer">
+                            <a href="articles/budget-backyard-makeover.html" class="article-link">
                                 Read Tutorial →
                             </a>
-                            <span style="color: #16a34a; font-weight: 600;">Only $2,000</span>
+                            <span class="article-savings">Only $2,000</span>
                         </div>
                     </div>
                 </article>
-
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section style="padding: 4rem 2rem; background: white;" id="about">
-        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; font-size: 3.5rem;">
-                👨‍🌾
-            </div>
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Hi, I'm Arturo</h2>
-            <p style="color: #666; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-avatar">👨‍🌾</div>
+            <h2 class="about-title">Hi, I'm Arturo</h2>
+            <p class="about-text">
                 I've worked in landscaping and hardscaping for over <strong>10 years</strong>, starting from the ground up as a laborer. 
                 I learned every aspect of the trade—from basic lawn care to complex stone work. Now I share that knowledge to help 
                 homeowners like you create beautiful outdoor spaces without the professional price tag.
             </p>
-            <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
-                <div>
-                    <div style="font-size: 1.5rem; font-weight: bold; color: #16a34a;">10+ Years</div>
-                    <div style="color: #666;">Professional Experience</div>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat-number">10+ Years</div>
+                    <div class="about-stat-label">Professional Experience</div>
                 </div>
-                <div>
-                    <div style="font-size: 1.5rem; font-weight: bold; color: #16a34a;">100+</div>
-                    <div style="color: #666;">Projects Completed</div>
+                <div class="about-stat">
+                    <div class="about-stat-number">100+</div>
+                    <div class="about-stat-label">Projects Completed</div>
                 </div>
-                <div>
-                    <div style="font-size: 1.5rem; font-weight: bold; color: #16a34a;">Virginia</div>
-                    <div style="color: #666;">Based & Working</div>
+                <div class="about-stat">
+                    <div class="about-stat-number">Virginia</div>
+                    <div class="about-stat-label">Based & Working</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section (ÚNICA Y CONSOLIDADA) -->
-    <section style="padding: 5rem 2rem; background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); color: white;" id="newsletter">
-        <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Get Free DIY Guides & Tips</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-icon">📧</div>
+            <h2 class="newsletter-title">Get Free DIY Guides & Tips</h2>
+            <p class="newsletter-subtitle">
                 Join homeowners who get weekly tutorials, money-saving tips, and exclusive content. 
                 Plus, get our <strong>FREE Beginner's Guide to Landscaping</strong> (worth $47) instantly.
             </p>
 
-            <!-- Newsletter Form -->
-            <form style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto 2rem; flex-wrap: wrap;">
-                <input type="email" 
-                       placeholder="Enter your email address" 
-                       required
-                       style="flex: 1; min-width: 250px; padding: 1rem 1.5rem; border: none; border-radius: 8px; font-size: 1rem;">
-                <button type="submit" 
-                        style="padding: 1rem 2.5rem; background: #ff6b35; color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; white-space: nowrap;">
-                    Get Free Guide →
-                </button>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-button">Get Free Guide →</button>
             </form>
 
-            <!-- Benefits -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-                    <div style="font-weight: 600;">Weekly Tutorials</div>
-                    <div style="opacity: 0.8; font-size: 0.9rem;">New projects every Tuesday</div>
+            <div class="newsletter-benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-title">Weekly Tutorials</div>
+                    <div class="benefit-text">New projects every Tuesday</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
-                    <div style="font-weight: 600;">Money-Saving Tips</div>
-                    <div style="opacity: 0.8; font-size: 0.9rem;">Best deals & discounts</div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <div class="benefit-title">Money-Saving Tips</div>
+                    <div class="benefit-text">Best deals & discounts</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎁</div>
-                    <div style="font-weight: 600;">Exclusive Content</div>
-                    <div style="opacity: 0.8; font-size: 0.9rem;">Subscribers-only guides</div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎁</div>
+                    <div class="benefit-title">Exclusive Content</div>
+                    <div class="benefit-text">Subscribers-only guides</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚫</div>
-                    <div style="font-weight: 600;">No Spam Ever</div>
-                    <div style="opacity: 0.8; font-size: 0.9rem;">Unsubscribe anytime</div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚫</div>
+                    <div class="benefit-title">No Spam Ever</div>
+                    <div class="benefit-text">Unsubscribe anytime</div>
                 </div>
             </div>
 
-            <p style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            <p class="newsletter-note">
                 Join 1,000+ homeowners already saving thousands on their projects
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: #1f2937; color: #e5e7eb; padding: 3rem 2rem 2rem;" id="contact">
-        <div class="container" style="max-width: 1200px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
-                
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
                 <!-- Column 1: About -->
                 <div>
-                    <h4 style="color: #16a34a; margin-bottom: 1rem; font-size: 1.3rem;">🌿 DIY Yard Pro</h4>
-                    <p style="color: #9ca3af; line-height: 1.6; margin-bottom: 1.5rem;">
+                    <h4 class="footer-title">🌿 DIY Yard Pro</h4>
+                    <p class="footer-text">
                         Professional landscaping tutorials for homeowners. Learn to build beautiful outdoor spaces and save thousands.
                     </p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" style="color: #9ca3af; font-size: 1.5rem; text-decoration: none;">📺</a>
-                        <a href="#" style="color: #9ca3af; font-size: 1.5rem; text-decoration: none;">📷</a>
-                        <a href="#" style="color: #9ca3af; font-size: 1.5rem; text-decoration: none;">📌</a>
-                        <a href="#" style="color: #9ca3af; font-size: 1.5rem; text-decoration: none;">👥</a>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📺</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📌</a>
+                        <a href="#" class="social-link">💬</a>
                     </div>
                 </div>
 
                 <!-- Column 2: Quick Links -->
                 <div>
-                    <h4 style="color: #16a34a; margin-bottom: 1rem;">Quick Links</h4>
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <a href="#home" style="color: #9ca3af; text-decoration: none;">Home</a>
-                        <a href="#articles" style="color: #9ca3af; text-decoration: none;">All Tutorials</a>
-                        <a href="#about" style="color: #9ca3af; text-decoration: none;">About</a>
-                        <a href="#newsletter" style="color: #9ca3af; text-decoration: none;">Newsletter</a>
-                        <a href="contact.html" style="color: #9ca3af; text-decoration: none;">Contact</a>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#articles" class="footer-link">All Tutorials</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#newsletter" class="footer-link">Newsletter</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
                     </div>
                 </div>
 
                 <!-- Column 3: Legal -->
                 <div>
-                    <h4 style="color: #16a34a; margin-bottom: 1rem;">Legal</h4>
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <a href="privacy-policy.html" style="color: #9ca3af; text-decoration: none;">Privacy Policy</a>
-                        <a href="terms.html" style="color: #9ca3af; text-decoration: none;">Terms of Service</a>
-                        <a href="#" style="color: #9ca3af; text-decoration: none;">Affiliate Disclosure</a>
+                    <h4 class="footer-title">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Affiliate Disclosure</a>
                     </div>
                 </div>
 
                 <!-- Column 4: Categories -->
                 <div>
-                    <h4 style="color: #16a34a; margin-bottom: 1rem;">Categories</h4>
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <a href="#" style="color: #9ca3af; text-decoration: none;">Hardscaping</a>
-                        <a href="#" style="color: #9ca3af; text-decoration: none;">Landscaping</a>
-                        <a href="#" style="color: #9ca3af; text-decoration: none;">Budget Projects</a>
-                        <a href="#" style="color: #9ca3af; text-decoration: none;">Garden Design</a>
+                    <h4 class="footer-title">Categories</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Hardscaping</a>
+                        <a href="#" class="footer-link">Landscaping</a>
+                        <a href="#" class="footer-link">Budget Projects</a>
+                        <a href="#" class="footer-link">Garden Design</a>
                     </div>
                 </div>
             </div>
 
             <!-- Footer Bottom -->
-            <div style="border-top: 1px solid #374151; padding-top: 2rem; text-align: center; color: #9ca3af;">
+            <div class="footer-bottom">
                 <p>&copy; 2025 DIY Yard Pro. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <p class="footer-tagline">
                     Made with 💚 in Virginia | Helping homeowners save thousands on landscaping
                 </p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
