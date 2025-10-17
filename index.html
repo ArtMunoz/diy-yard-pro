@@ -93,89 +93,361 @@
         </div>
     </section>
 
-    <!-- Articles Section -->
-    <section class="articles-section" id="articles">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest Tutorials</h2>
-                <p class="section-subtitle">Step-by-step guides to transform your outdoor space</p>
-            </div>
-
-            <div class="articles-grid">
-                <!-- Article 1: Stone Patio -->
-                <article class="article-card">
-                    <div class="article-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <div class="article-icon">🗿</div>
-                        <span class="article-badge">HARDSCAPING</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>⏱️ 15 min read</span>
-                            <span>🔧 Intermediate</span>
-                        </div>
-                        <h3 class="article-title">How to Build a Stone Patio: Complete Guide</h3>
-                        <p class="article-description">
-                            Learn to build a professional-quality stone patio and save $3,000-$5,000. Includes materials list, step-by-step instructions, and pro tips.
-                        </p>
-                        <div class="article-footer">
-                            <a href="articles/stone-patio-construction.html" class="article-link">
-                                Read Tutorial →
-                            </a>
-                            <span class="article-savings">Save $3,000+</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 2: Low-Maintenance Landscaping -->
-                <article class="article-card">
-                    <div class="article-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-                        <div class="article-icon">🌱</div>
-                        <span class="article-badge">LANDSCAPING</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>⏱️ 12 min read</span>
-                            <span>🌿 Easy</span>
-                        </div>
-                        <h3 class="article-title">Complete Guide to Low-Maintenance Landscaping</h3>
-                        <p class="article-description">
-                            Create a beautiful landscape that practically takes care of itself. Save 100+ hours per year and reduce water bills by 70%.
-                        </p>
-                        <div class="article-footer">
-                            <a href="articles/low-maintenance-landscaping.html" class="article-link">
-                                Read Tutorial →
-                            </a>
-                            <span class="article-savings">Save 100+ hrs/yr</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 3: Budget Backyard -->
-                <article class="article-card">
-                    <div class="article-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <div class="article-icon">💰</div>
-                        <span class="article-badge">BUDGET</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>⏱️ 10 min read</span>
-                            <span>💵 Budget-Friendly</span>
-                        </div>
-                        <h3 class="article-title">Complete Backyard Makeover Under $2,000</h3>
-                        <p class="article-description">
-                            Transform your entire backyard on a tight budget. Complete timeline, shopping list, and money-saving strategies included.
-                        </p>
-                        <div class="article-footer">
-                            <a href="articles/budget-backyard-makeover.html" class="article-link">
-                                Read Tutorial →
-                            </a>
-                            <span class="article-savings">Only $2,000</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
+   <!-- Latest Tutorials Section -->
+<section class="articles-section" id="articles">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Latest Tutorials</h2>
+            <p class="section-subtitle">Step-by-step guides to transform your outdoor space</p>
         </div>
-    </section>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">
+                🌟 All Projects
+            </button>
+            <button class="filter-btn" data-category="hardscaping">
+                🗿 Hardscaping
+            </button>
+            <button class="filter-btn" data-category="landscaping">
+                🌱 Landscaping
+            </button>
+            <button class="filter-btn" data-category="budget">
+                💰 Budget-Friendly
+            </button>
+            <button class="filter-btn" data-category="seasonal">
+                🍂 Seasonal
+            </button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid">
+            
+            <!-- Article 1: Stone Patio -->
+            <article class="article-card" data-category="hardscaping">
+                <div class="article-featured-badge">⭐ Most Popular</div>
+                <div class="article-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="article-icon">🗿</div>
+                    <span class="article-badge">HARDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 15 min read</span>
+                        <span>🔧 Intermediate</span>
+                        <span class="article-views">👁️ 2.5K views</span>
+                    </div>
+                    <h3 class="article-title">How to Build a Stone Patio: Complete Guide</h3>
+                    <p class="article-description">
+                        Learn to build a professional-quality stone patio and save $3,000-$5,000. Includes materials list, step-by-step instructions, and pro tips.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Patio</span>
+                        <span class="tag">Stone Work</span>
+                        <span class="tag">DIY</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/stone-patio-construction.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save $3,000+</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2: Low-Maintenance Landscaping -->
+            <article class="article-card" data-category="landscaping">
+                <div class="article-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    <div class="article-icon">🌱</div>
+                    <span class="article-badge">LANDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 12 min read</span>
+                        <span>🌿 Easy</span>
+                        <span class="article-views">👁️ 1.8K views</span>
+                    </div>
+                    <h3 class="article-title">Complete Guide to Low-Maintenance Landscaping</h3>
+                    <p class="article-description">
+                        Create a beautiful landscape that practically takes care of itself. Save 100+ hours per year and reduce water bills by 70%.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Low-Maintenance</span>
+                        <span class="tag">Native Plants</span>
+                        <span class="tag">Water-Saving</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/low-maintenance-landscaping.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save 100+ hrs/yr</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3: Budget Backyard -->
+            <article class="article-card" data-category="budget">
+                <div class="article-featured-badge" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🔥 Trending</div>
+                <div class="article-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="article-icon">💰</div>
+                    <span class="article-badge">BUDGET</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>💵 Budget-Friendly</span>
+                        <span class="article-views">👁️ 3.2K views</span>
+                    </div>
+                    <h3 class="article-title">Complete Backyard Makeover Under $2,000</h3>
+                    <p class="article-description">
+                        Transform your entire backyard on a tight budget. Complete timeline, shopping list, and money-saving strategies included.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Budget</span>
+                        <span class="tag">Makeover</span>
+                        <span class="tag">Cost-Effective</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/budget-backyard-makeover.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Only $2,000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4: Walkway Construction -->
+            <article class="article-card" data-category="hardscaping">
+                <div class="article-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="article-icon">🚶</div>
+                    <span class="article-badge">HARDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 14 min read</span>
+                        <span>🔧 Intermediate</span>
+                        <span class="article-views">👁️ 1.5K views</span>
+                    </div>
+                    <h3 class="article-title">Building a Perfect Garden Walkway</h3>
+                    <p class="article-description">
+                        Create stunning pathways with pavers, stones, or gravel. Learn proper base preparation, pattern layouts, and finishing techniques.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Walkway</span>
+                        <span class="tag">Pavers</span>
+                        <span class="tag">Pathway</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/garden-walkway.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save $1,500+</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5: Retaining Wall -->
+            <article class="article-card" data-category="hardscaping">
+                <div class="article-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="article-icon">🧱</div>
+                    <span class="article-badge">HARDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 18 min read</span>
+                        <span>🔨 Advanced</span>
+                        <span class="article-views">👁️ 980 views</span>
+                    </div>
+                    <h3 class="article-title">DIY Retaining Wall: A Complete Guide</h3>
+                    <p class="article-description">
+                        Build a sturdy retaining wall to prevent erosion and create beautiful terraced gardens. Includes drainage solutions and structural tips.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Retaining Wall</span>
+                        <span class="tag">Drainage</span>
+                        <span class="tag">Terracing</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/retaining-wall.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save $4,000+</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6: Fall Garden Prep -->
+            <article class="article-card" data-category="seasonal">
+                <div class="article-featured-badge" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">🆕 New</div>
+                <div class="article-header" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                    <div class="article-icon">🍂</div>
+                    <span class="article-badge">SEASONAL</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        <span>🌿 Easy</span>
+                        <span class="article-views">👁️ 1.1K views</span>
+                    </div>
+                    <h3 class="article-title">Fall Garden Preparation Checklist</h3>
+                    <p class="article-description">
+                        Get your garden ready for winter with this comprehensive fall prep guide. Protect plants, improve soil, and plan for spring success.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Fall</span>
+                        <span class="tag">Winter Prep</span>
+                        <span class="tag">Seasonal</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/fall-garden-prep.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save Time</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 7: Outdoor Lighting -->
+            <article class="article-card" data-category="landscaping">
+                <div class="article-header" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <div class="article-icon">💡</div>
+                    <span class="article-badge">LANDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        <span>🔌 Easy</span>
+                        <span class="article-views">👁️ 1.6K views</span>
+                    </div>
+                    <h3 class="article-title">Outdoor Lighting Design & Installation</h3>
+                    <p class="article-description">
+                        Illuminate your landscape beautifully and safely. Learn about solar, LED, and low-voltage lighting options with installation tips.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Lighting</span>
+                        <span class="tag">Solar</span>
+                        <span class="tag">LED</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/outdoor-lighting.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save $800+</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8: Raised Garden Beds -->
+            <article class="article-card" data-category="budget">
+                <div class="article-header" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                    <div class="article-icon">🌻</div>
+                    <span class="article-badge">BUDGET</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>🔨 Easy</span>
+                        <span class="article-views">👁️ 2.1K views</span>
+                    </div>
+                    <h3 class="article-title">Building Raised Garden Beds on a Budget</h3>
+                    <p class="article-description">
+                        Create productive raised beds for vegetables and flowers. Multiple design options from wood to cinder blocks, all budget-friendly.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Raised Beds</span>
+                        <span class="tag">Vegetables</span>
+                        <span class="tag">Garden</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/raised-garden-beds.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Under $200</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9: Lawn Care -->
+            <article class="article-card" data-category="landscaping">
+                <div class="article-header" style="background: linear-gradient(135deg, #7ee8fa 0%, #80ff72 100%);">
+                    <div class="article-icon">🌾</div>
+                    <span class="article-badge">LANDSCAPING</span>
+                </div>
+                <div class="article-body">
+                    <div class="article-meta">
+                        <span>⏱️ 13 min read</span>
+                        <span>🌿 Easy</span>
+                        <span class="article-views">👁️ 1.9K views</span>
+                    </div>
+                    <h3 class="article-title">Professional Lawn Care: Year-Round Guide</h3>
+                    <p class="article-description">
+                        Achieve a lush, green lawn with proper mowing, fertilizing, and maintenance. Season-by-season care schedule included.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Lawn Care</span>
+                        <span class="tag">Grass</span>
+                        <span class="tag">Maintenance</span>
+                    </div>
+                    <div class="article-footer">
+                        <a href="articles/lawn-care-guide.html" class="article-link">
+                            Read Tutorial →
+                        </a>
+                        <span class="article-savings">Save $500/yr</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn">
+                <span>Load More Tutorials</span>
+                <span class="btn-icon">↓</span>
+            </button>
+            <p class="articles-count">Showing 9 of 25+ tutorials</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+// Category Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.article-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const category = this.getAttribute('data-category');
+            
+            articles.forEach(article => {
+                if (category === 'all' || article.getAttribute('data-category') === category) {
+                    article.style.display = 'block';
+                    // Animate in
+                    article.style.animation = 'fadeInUp 0.5s ease-out';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // Load More Button
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Add your load more functionality here
+            alert('Loading more tutorials... (This would load additional articles in production)');
+        });
+    }
+});
+</script>
 
     <!-- About Section -->
     <section class="about-section" id="about">
