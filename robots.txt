@@ -8,7 +8,7 @@ Allow: /assets/images/
 Disallow: /admin/
 Disallow: /.netlify/
 
-Sitemap: https://diy-yard-pro.netlify.app/sitemap.xml
+Sitemap: https://diy-yard-pro.com/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
