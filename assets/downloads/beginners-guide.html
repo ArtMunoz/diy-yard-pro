@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beginner's Guide to Landscaping — DIY Yard Pro</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;color:#1f2937;background:#fff;font-size:14px;line-height:1.7}
+
+  /* PRINT BUTTON — hidden when printing */
+  .print-bar{background:#1a5f3a;color:#fff;text-align:center;padding:14px;font-size:15px;font-weight:600}
+  .print-btn{background:#ff6b35;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;margin-left:20px;font-family:inherit}
+  .print-btn:hover{background:#e55a2b}
+  @media print{.print-bar{display:none}}
+
+  /* COVER PAGE */
+  .cover{background:linear-gradient(135deg,#1a5f3a 0%,#0d3d25 100%);color:#fff;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 40px;page-break-after:always}
+  .cover-badge{background:rgba(255,107,53,1);color:#fff;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:8px 20px;border-radius:30px;margin-bottom:30px;display:inline-block}
+  .cover-title{font-family:'Playfair Display',serif;font-size:48px;font-weight:800;line-height:1.15;margin-bottom:20px;max-width:600px}
+  .cover-subtitle{font-size:18px;opacity:.85;max-width:480px;margin-bottom:40px;line-height:1.6}
+  .cover-author{display:flex;align-items:center;gap:16px;justify-content:center}
+  .cover-avatar{width:64px;height:64px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px}
+  .cover-author-info{text-align:left}
+  .cover-author-name{font-weight:700;font-size:17px}
+  .cover-author-title{font-size:13px;opacity:.75}
+  .cover-divider{width:60px;height:3px;background:#ff6b35;border-radius:2px;margin:40px auto}
+  .cover-promise{font-size:15px;opacity:.8;max-width:400px;font-style:italic}
+
+  /* CONTENT PAGES */
+  .page{max-width:780px;margin:0 auto;padding:50px 50px}
+  @media print{.page{padding:30px 40px;max-width:100%}}
+
+  h1{font-family:'Playfair Display',serif;font-size:32px;color:#1a5f3a;margin-bottom:16px;line-height:1.2}
+  h2{font-family:'Playfair Display',serif;font-size:24px;color:#1a5f3a;margin:40px 0 16px;padding-bottom:8px;border-bottom:3px solid #1a5f3a}
+  h3{font-size:17px;font-weight:700;color:#1f2937;margin:24px 0 10px}
+  p{margin-bottom:14px;color:#374151}
+  ul,ol{margin:10px 0 16px 24px}
+  li{margin-bottom:8px;color:#374151}
+  strong{color:#1f2937}
+
+  /* CALLOUT BOXES */
+  .tip{background:#f0fdf4;border-left:4px solid #1a5f3a;padding:16px 20px;border-radius:8px;margin:20px 0}
+  .tip strong{color:#1a5f3a;display:block;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+  .warning{background:#fffbeb;border-left:4px solid #f59e0b;padding:16px 20px;border-radius:8px;margin:20px 0}
+  .warning strong{color:#d97706;display:block;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+
+  /* PROJECT CARDS */
+  .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
+  @media print{.project-grid{grid-template-columns:1fr 1fr}}
+  .project-card{background:#f9fafb;border:2px solid #e5e7eb;border-radius:12px;padding:20px}
+  .project-card h3{color:#1a5f3a;margin-top:0;margin-bottom:8px;font-size:15px}
+  .project-tag{display:inline-block;background:#1a5f3a;color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+  .project-meta{display:flex;gap:14px;margin-top:12px;font-size:12px;color:#6b7280;font-weight:600}
+
+  /* TOOL LIST */
+  .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+  .tool-item{background:#f9fafb;border-radius:8px;padding:12px 16px;border-left:3px solid #1a5f3a;font-size:13px}
+  .tool-item strong{display:block;color:#1f2937;margin-bottom:3px}
+  .tool-item span{color:#6b7280;font-size:12px}
+
+  /* CALENDAR */
+  .season-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+  .season-card{border-radius:10px;padding:16px 18px}
+  .season-card.spring{background:#f0fdf4;border:1px solid #bbf7d0}
+  .season-card.summer{background:#fefce8;border:1px solid #fde68a}
+  .season-card.fall{background:#fff7ed;border:1px solid #fed7aa}
+  .season-card.winter{background:#eff6ff;border:1px solid #bfdbfe}
+  .season-card h3{margin-top:0;margin-bottom:10px;font-size:15px}
+  .season-card.spring h3{color:#16a34a}
+  .season-card.summer h3{color:#ca8a04}
+  .season-card.fall h3{color:#ea580c}
+  .season-card.winter h3{color:#2563eb}
+  .season-card ul{margin:0;padding-left:18px}
+  .season-card li{font-size:12px;margin-bottom:4px}
+
+  /* COST TABLE */
+  table{width:100%;border-collapse:collapse;margin:16px 0}
+  th{background:#1a5f3a;color:#fff;padding:10px 14px;text-align:left;font-size:13px}
+  td{padding:10px 14px;border-bottom:1px solid #e5e7eb;font-size:13px;color:#374151}
+  tr:nth-child(even) td{background:#f9fafb}
+  td:last-child{font-weight:600;color:#1a5f3a}
+
+  /* PAGE BREAK */
+  .page-break{page-break-before:always}
+
+  /* CTA BOX */
+  .cta-box{background:linear-gradient(135deg,#1a5f3a,#0d3d25);color:#fff;padding:30px;border-radius:14px;text-align:center;margin:40px 0}
+  .cta-box h2{color:#fff;border:none;margin:0 0 12px;font-size:22px}
+  .cta-box p{color:rgba(255,255,255,.85);margin-bottom:18px}
+  .cta-box a{background:#ff6b35;color:#fff;text-decoration:none;padding:12px 28px;border-radius:8px;font-weight:700;font-size:15px}
+
+  /* FOOTER */
+  .guide-footer{text-align:center;padding:30px;border-top:2px solid #e5e7eb;color:#9ca3af;font-size:12px;margin-top:40px}
+
+  /* CHECKLIST */
+  .checklist li{list-style:none;padding-left:0}
+  .checklist li::before{content:"☐  ";font-size:16px;color:#1a5f3a}
+</style>
+</head>
+<body>
+
+<!-- PRINT BAR -->
+<div class="print-bar">
+  Save this guide: <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  <span style="margin-left:20px;font-size:13px;opacity:.8">Ctrl+P → "Save as PDF" → Save</span>
+</div>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="cover-badge">Free Resource — DIY Yard Pro</div>
+  <h1 class="cover-title">The Beginner's Complete Guide to Landscaping</h1>
+  <p class="cover-subtitle">Everything you need to start transforming your yard — even if you've never picked up a shovel before</p>
+  <div class="cover-divider"></div>
+  <div class="cover-author">
+    <div class="cover-avatar">👨‍🌾</div>
+    <div class="cover-author-info">
+      <div class="cover-author-name">Arturo (TheArt1986)</div>
+      <div class="cover-author-title">10+ Year Professional Landscaper · diy-yard-pro.com</div>
+    </div>
+  </div>
+  <div class="cover-divider"></div>
+  <p class="cover-promise">"In 10 years of doing this professionally, I've seen homeowners overspend, overplan, and overthink. This guide cuts through all of that. Start small. Build confidence. Then build something amazing."</p>
+</div>
+
+<!-- PAGE 1: INTRODUCTION -->
+<div class="page">
+  <h1>Welcome — You Can Do This</h1>
+  <p>If you picked up this guide, you probably have a yard that could look a lot better than it does. Maybe it's a patch of scraggly grass, overgrown beds, or just a blank slate that intimidates you. I've been there — and I've helped hundreds of homeowners transform spaces exactly like yours.</p>
+  <p>Here's the truth nobody tells you: <strong>landscaping is mostly common sense, patience, and a willingness to get your hands dirty.</strong> You don't need an art degree, a contractor's license, or $20,000. You need the right information — and that's what this guide is for.</p>
+
+  <div class="tip">
+    <strong>Who This Guide Is For</strong>
+    Homeowners who are new to landscaping and want to start with confidence. No prior experience needed — just a willingness to learn and some weekend time to spare.
+  </div>
+
+  <h2>What You'll Learn in This Guide</h2>
+  <ul>
+    <li><strong>How to plan</strong> your landscape before spending a single dollar</li>
+    <li><strong>The essential tools</strong> every beginner needs (and which ones to skip)</li>
+    <li><strong>5 beginner-friendly projects</strong> you can complete in a weekend</li>
+    <li><strong>How to choose plants</strong> that actually survive in your climate</li>
+    <li><strong>A year-round maintenance calendar</strong> so you always know what to do next</li>
+    <li><strong>Real cost estimates</strong> so you can budget without surprises</li>
+    <li><strong>When to DIY</strong> and when to call a professional</li>
+  </ul>
+
+  <div class="warning">
+    <strong>Important Before You Start</strong>
+    Always call 811 (free in the U.S.) before digging anywhere in your yard. This connects you to your local utility company who will mark underground lines. It's the law, it's free, and it takes 2 minutes.
+  </div>
+</div>
+
+<!-- PAGE 2: PLANNING -->
+<div class="page page-break">
+  <h2>Step 1 — Plan Before You Plant</h2>
+  <p>The single biggest mistake beginners make is buying plants and tools before they have a plan. Then they wonder why their yard looks random and disorganized two years later. A few hours of planning up front saves you hundreds of dollars and years of frustration.</p>
+
+  <h3>The 3 Questions to Answer First</h3>
+  <ol>
+    <li><strong>How do you USE your yard?</strong> Do you have kids who need open lawn space? Do you entertain? Do you want to grow food? Your answer shapes every decision that follows.</li>
+    <li><strong>How much time can you realistically spend on maintenance?</strong> Be honest. A beautiful lawn requires 2–4 hours per week. A low-maintenance native garden might need 30 minutes. Choose based on your real life, not your ideal life.</li>
+    <li><strong>What's your actual budget?</strong> Landscaping is easy to overspend on. Set a hard budget and add 15% as a contingency. Then we'll show you how to maximize it.</li>
+  </ol>
+
+  <h3>Sketch Your Yard First</h3>
+  <p>You don't need software — a pencil and graph paper work fine. Draw the outline of your yard, then mark:</p>
+  <ul>
+    <li>Where the sun hits in morning vs. afternoon (critical for plant selection)</li>
+    <li>Low spots where water pools after rain (these need drainage attention)</li>
+    <li>Existing trees, utilities, and structures</li>
+    <li>Zones: lawn area, garden beds, hardscaping (patio/path), utility area</li>
+  </ul>
+
+  <div class="tip">
+    <strong>Pro Tip — The 60/30/10 Budget Rule</strong>
+    Spend 60% of your budget on permanent hardscaping (patios, edging, mulch) that will last decades. Spend 30% on plants and lawn. Spend 10% on accessories like lighting and decor. This creates a landscape that looks intentional and holds up over time.
+  </div>
+
+  <h3>Know Your Growing Zone</h3>
+  <p>The USDA Plant Hardiness Zone Map divides the U.S. into climate zones. Every plant is rated for zones where it can survive winter. If you plant a Zone 8 shrub in Zone 5, it will die. Look up your zone at <strong>planthardiness.ars.usda.gov</strong> before buying any plant.</p>
+
+  <table>
+    <tr><th>Zone Range</th><th>Example Regions</th><th>Winter Low Temps</th></tr>
+    <tr><td>Zone 5–6</td><td>Midwest, New England, Mid-Atlantic</td><td>-20°F to 0°F</td></tr>
+    <tr><td>Zone 7–8</td><td>Virginia, Tennessee, Pacific Northwest</td><td>0°F to 20°F</td></tr>
+    <tr><td>Zone 9–10</td><td>Florida, Texas, California</td><td>20°F to 40°F</td></tr>
+  </table>
+</div>
+
+<!-- PAGE 3: TOOLS -->
+<div class="page page-break">
+  <h2>Step 2 — The Essential Tool Kit</h2>
+  <p>You don't need to buy everything at once. Start with the basics, then add tools as you take on bigger projects. The list below covers 90% of what you'll need for the projects in this guide.</p>
+
+  <div class="tool-grid">
+    <div class="tool-item">
+      <strong>Round Point Shovel</strong>
+      <span>Your most-used tool. For digging, planting, and edging. Buy one with a fiberglass handle — wood rots.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Garden Hoe</strong>
+      <span>For breaking up soil and clearing weeds. A standard flat hoe handles most jobs.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Hand Trowel</strong>
+      <span>For planting annuals, bulbs, and transplants. Get a stainless steel one — cheap trowels bend.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Garden Rake</strong>
+      <span>For leveling soil, spreading mulch, and cleaning up leaves. Not the same as a leaf rake.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Wheelbarrow</strong>
+      <span>Essential for moving mulch, soil, and gravel. A 6-cubic-foot barrow handles most DIY loads.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Garden Gloves</strong>
+      <span>Protect your hands from thorns, soil bacteria, and blisters. Buy 2 pairs — you'll lose one.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Tape Measure (25 ft)</strong>
+      <span>For calculating square footage of beds and patios. Never guess — always measure.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Garden Hose + Adjustable Nozzle</strong>
+      <span>A quality expandable hose saves storage space. The nozzle lets you water gently or spray hard.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Kneeling Pad</strong>
+      <span>Your knees will thank you after Hour 1. A thick foam pad is a $15 investment worth making.</span>
+    </div>
+    <div class="tool-item">
+      <strong>Edging Tool</strong>
+      <span>For clean lines between lawn and garden beds. A half-moon edger cuts crisp, professional-looking edges.</span>
+    </div>
+  </div>
+
+  <div class="warning">
+    <strong>Don't Buy This Yet</strong>
+    Skip gas-powered tools (tiller, aerator, compactor) until you need them. Rent these from Home Depot or Lowe's for $50–100 per day instead of buying for $400+. You'll use them 2–3 times per year at most.
+  </div>
+
+  <h3>Safety Equipment — Non-Negotiable</h3>
+  <ul>
+    <li><strong>Safety glasses</strong> — Flying debris from digging and mulching is a real hazard</li>
+    <li><strong>Work boots with toe protection</strong> — Dropping a paving stone on sneakers ends a project fast</li>
+    <li><strong>Sunscreen + hat</strong> — Landscaping means hours in direct sun</li>
+    <li><strong>Knee pads</strong> — For extended planting and edging work</li>
+  </ul>
+</div>
+
+<!-- PAGE 4: BEGINNER PROJECTS -->
+<div class="page page-break">
+  <h2>Step 3 — 5 Projects to Start With</h2>
+  <p>These projects are ranked by difficulty. Start at the top and work your way down as your confidence grows. Each one teaches skills you'll use in the next project.</p>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <span class="project-tag">Project 1 — Easiest</span>
+      <h3>Fresh Mulch & Clean Edges</h3>
+      <p style="font-size:13px;color:#374151;">Edge your existing garden beds with a half-moon edger, then apply 2–3 inches of fresh hardwood mulch. This single change makes your entire yard look 10× more polished.</p>
+      <div class="project-meta">
+        <span>⏱️ 4–6 hrs</span>
+        <span>💰 $100–300</span>
+        <span>⭐ Beginner</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Project 2</span>
+      <h3>Plant a Garden Bed</h3>
+      <p style="font-size:13px;color:#374151;">Choose a sunny area (6+ hours of sun), clear existing grass, loosen soil 8–10 inches deep, add 2–3 inches of compost, and plant drought-tolerant perennials. They come back every year.</p>
+      <div class="project-meta">
+        <span>⏱️ 1 weekend</span>
+        <span>💰 $150–400</span>
+        <span>⭐ Beginner</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Project 3</span>
+      <h3>Add Stepping Stones</h3>
+      <p style="font-size:13px;color:#374151;">Create a simple path through your yard using 16"×16" concrete stepping stones. Dig 2 inches, set in sand, and level each stone. Defines your space and stops grass from getting muddy.</p>
+      <div class="project-meta">
+        <span>⏱️ 4–8 hrs</span>
+        <span>💰 $80–200</span>
+        <span>⭐ Beginner</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Project 4</span>
+      <h3>Install Solar Lighting</h3>
+      <p style="font-size:13px;color:#374151;">Solar path lights transform your yard at night and require zero wiring. Stake them along your path or driveway. Choose 100+ lumen models — cheap ones fade within months.</p>
+      <div class="project-meta">
+        <span>⏱️ 1–2 hrs</span>
+        <span>💰 $60–150</span>
+        <span>⭐ Beginner</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Project 5</span>
+      <h3>Build a Raised Garden Bed</h3>
+      <p style="font-size:13px;color:#374151;">A 4×8 foot cedar raised bed gives you perfect control over soil quality. Fill with Mel's Mix (1/3 compost, 1/3 peat, 1/3 vermiculite). Great for vegetables, herbs, and flowers.</p>
+      <div class="project-meta">
+        <span>⏱️ 1 weekend</span>
+        <span>💰 $120–250</span>
+        <span>⭐ Beginner+</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Weekend Challenge</span>
+      <h3>Budget Backyard Refresh</h3>
+      <p style="font-size:13px;color:#374151;">Combine Projects 1–4: edge all beds, add fresh mulch, install stepping stones, and add lighting. This single weekend combination completely transforms the curb appeal of most yards.</p>
+      <div class="project-meta">
+        <span>⏱️ 2 weekends</span>
+        <span>💰 $400–800</span>
+        <span>⭐ Beginner</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 5: PLANTS & SOIL -->
+<div class="page page-break">
+  <h2>Step 4 — Choosing Plants That Actually Survive</h2>
+  <p>The most common beginner mistake is buying plants based on how beautiful they look at the garden center — without checking if they'll survive your climate, soil, or light conditions. Here's how to choose smart.</p>
+
+  <h3>The 4 Questions to Ask Before Buying Any Plant</h3>
+  <ol>
+    <li><strong>Is it rated for my zone?</strong> Check the tag. If your zone isn't listed, don't buy it.</li>
+    <li><strong>How much sun does it need?</strong> "Full sun" means 6+ hours of direct sunlight. Most plants die from wrong sun placement, not wrong care.</li>
+    <li><strong>How much water does it need?</strong> Choose drought-tolerant plants if you don't want to water regularly.</li>
+    <li><strong>Is it invasive in my region?</strong> Some beautiful plants (English Ivy, Burning Bush) are invasive in many states. Check your state's invasive plant list.</li>
+  </ol>
+
+  <h3>Best Beginner Plants by Category</h3>
+
+  <table>
+    <tr><th>Plant</th><th>Sun</th><th>Water</th><th>Why It's Great</th></tr>
+    <tr><td>Black-Eyed Susan</td><td>Full sun</td><td>Low</td><td>Native, drought-tough, blooms all summer</td></tr>
+    <tr><td>Lavender</td><td>Full sun</td><td>Very low</td><td>Deer-resistant, fragrant, easy</td></tr>
+    <tr><td>Ornamental Grass</td><td>Full sun</td><td>Low</td><td>Zero maintenance, looks great year-round</td></tr>
+    <tr><td>Hostas</td><td>Shade</td><td>Medium</td><td>The best shade plant — nearly indestructible</td></tr>
+    <tr><td>Daylilies</td><td>Full–part sun</td><td>Low</td><td>Multiply every year, very forgiving</td></tr>
+    <tr><td>Sedum</td><td>Full sun</td><td>Very low</td><td>Succulent, survives drought and neglect</td></tr>
+    <tr><td>Coneflower (Echinacea)</td><td>Full sun</td><td>Low</td><td>Native, attracts butterflies, very hardy</td></tr>
+    <tr><td>Creeping Thyme</td><td>Full sun</td><td>Very low</td><td>Great ground cover, fragrant when walked on</td></tr>
+  </table>
+
+  <h3>Understanding Your Soil</h3>
+  <p>Most landscaping problems trace back to bad soil. The simple test: grab a handful of damp soil and squeeze it. If it holds shape and breaks apart easily = good loam. If it's sticky/clay-heavy = add compost. If it falls apart like sand = add compost.</p>
+
+  <div class="tip">
+    <strong>The $30 Investment That Changes Everything</strong>
+    A basic soil test kit from your local extension service costs $15–30 and tells you your soil pH and nutrient levels. Most plants prefer pH 6.0–7.0. If your soil is too acidic or alkaline, even perfect plants will struggle.
+  </div>
+</div>
+
+<!-- PAGE 6: SEASONAL CALENDAR -->
+<div class="page page-break">
+  <h2>Step 5 — Your Year-Round Maintenance Calendar</h2>
+  <p>Landscaping is a lot easier when you know what to do and when. This calendar covers the most important tasks for each season. You won't need to do everything — focus on what applies to your yard.</p>
+
+  <div class="season-grid">
+    <div class="season-card spring">
+      <h3>🌱 Spring (March–May)</h3>
+      <ul>
+        <li>Clean up winter debris and dead leaves</li>
+        <li>Edge all garden beds (first and most visible task)</li>
+        <li>Apply fresh mulch 2–3 inches (after edging)</li>
+        <li>Divide and transplant perennials</li>
+        <li>Apply pre-emergent weed control</li>
+        <li>Overseed thin lawn areas</li>
+        <li>Plant cool-season annuals (pansies, snapdragons)</li>
+        <li>Start watering schedule as temps rise</li>
+      </ul>
+    </div>
+    <div class="season-card summer">
+      <h3>☀️ Summer (June–August)</h3>
+      <ul>
+        <li>Water deeply 2–3x per week (not daily)</li>
+        <li>Mow regularly — never remove more than 1/3 blade height</li>
+        <li>Deadhead flowers to extend blooming</li>
+        <li>Pull weeds after rain (soil soft, roots come clean)</li>
+        <li>Watch for pest and disease signs</li>
+        <li>Plant heat-lovers: zinnias, marigolds, basil</li>
+        <li>Check and adjust irrigation if you have it</li>
+        <li>Don't fertilize cool-season grass in heat</li>
+      </ul>
+    </div>
+    <div class="season-card fall">
+      <h3>🍂 Fall (September–November)</h3>
+      <ul>
+        <li>Aerate lawn (most important lawn task of the year)</li>
+        <li>Overseed and apply fall fertilizer</li>
+        <li>Plant spring bulbs (tulips, daffodils, crocuses)</li>
+        <li>Cut back perennials after frost</li>
+        <li>Rake and remove thick leaf accumulations</li>
+        <li>Winterize irrigation system (Zone 7 and colder)</li>
+        <li>Plant trees and shrubs (roots grow all fall)</li>
+        <li>Mow to 2.5–3 inches for winter</li>
+      </ul>
+    </div>
+    <div class="season-card winter">
+      <h3>❄️ Winter (December–February)</h3>
+      <ul>
+        <li>Service your mower and tools (sharpen blades)</li>
+        <li>Plan next year's projects on paper</li>
+        <li>Order seeds for spring starting</li>
+        <li>Protect young trees from deer with tree wrap</li>
+        <li>Apply ice melt carefully (salt kills lawn edges)</li>
+        <li>Note what worked and what didn't this year</li>
+        <li>Research and budget for spring projects</li>
+        <li>Enjoy the rest — you earned it</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>When to DIY vs. Hire a Professional</h2>
+  <p>Not everything should be a DIY project. Here's my honest assessment from 10+ years in the field:</p>
+
+  <table>
+    <tr><th>Task</th><th>DIY?</th><th>Why</th></tr>
+    <tr><td>Mulching & edging</td><td>✅ Always DIY</td><td>Simple, high-impact, and overpriced if hired</td></tr>
+    <tr><td>Planting shrubs & perennials</td><td>✅ Always DIY</td><td>Easy with proper hole preparation</td></tr>
+    <tr><td>Stone patio (under 300 sq ft)</td><td>✅ DIY-friendly</td><td>Saves $3,000–8,000. Requires patience.</td></tr>
+    <tr><td>Retaining wall (under 3 ft)</td><td>✅ DIY-friendly</td><td>Saves $4,000+. Drainage is critical.</td></tr>
+    <tr><td>Large tree removal</td><td>❌ Hire a pro</td><td>Falling trees kill people. Not worth it.</td></tr>
+    <tr><td>Irrigation installation</td><td>⚠️ Depends</td><td>Drip systems: DIY. In-ground spray: hire.</td></tr>
+    <tr><td>Retaining wall over 4 ft</td><td>❌ Hire a pro</td><td>Structural failure risk + likely needs permit</td></tr>
+    <tr><td>Grading/drainage issues</td><td>⚠️ Depends</td><td>Minor grading: DIY. Major drainage: hire.</td></tr>
+  </table>
+</div>
+
+<!-- PAGE 7: CHECKLIST + CTA -->
+<div class="page page-break">
+  <h2>Your First Month Checklist</h2>
+  <p>Use this checklist to guide your first 30 days of landscaping. Check off each item as you go.</p>
+
+  <h3>Week 1 — Assessment</h3>
+  <ul class="checklist">
+    <li>Walk your entire yard and take notes (and photos)</li>
+    <li>Identify problem areas: bare spots, drainage, overgrown beds</li>
+    <li>Look up your USDA Plant Hardiness Zone</li>
+    <li>Sketch a rough map of your yard</li>
+    <li>Set a realistic budget for the next 3 months</li>
+  </ul>
+
+  <h3>Week 2 — Planning</h3>
+  <ul class="checklist">
+    <li>Decide on your top 1–2 projects for this season</li>
+    <li>Research plant options for your zone and light conditions</li>
+    <li>Calculate square footage for mulch (Length × Width ÷ 12 for 1 inch depth)</li>
+    <li>Make your shopping list before going to the store</li>
+    <li>Call 811 if any project involves digging</li>
+  </ul>
+
+  <h3>Week 3 — First Project</h3>
+  <ul class="checklist">
+    <li>Edge all existing garden beds</li>
+    <li>Pull visible weeds</li>
+    <li>Apply fresh mulch (2–3 inches)</li>
+    <li>Take "before" photos — you'll want these later</li>
+  </ul>
+
+  <h3>Week 4 — Build on It</h3>
+  <ul class="checklist">
+    <li>Tackle your second project from the list above</li>
+    <li>Water new plantings every 2–3 days for first 2 weeks</li>
+    <li>Take "after" photos and compare</li>
+    <li>Note what's next on your list</li>
+  </ul>
+
+  <div class="tip">
+    <strong>The Most Important Advice in This Guide</strong>
+    Start smaller than you think you should. A perfectly mulched, cleanly edged bed looks 100× better than an ambitious half-finished project. Finish one thing completely, then move to the next. Momentum and visible wins keep you motivated.
+  </div>
+
+  <div class="cta-box">
+    <h2>Want Step-by-Step Project Guides?</h2>
+    <p>At DIY Yard Pro, every major project has its own detailed tutorial with materials lists, cost estimates, and pro tips from my 10+ years in the field.</p>
+    <a href="https://diy-yard-pro.com">Visit diy-yard-pro.com →</a>
+  </div>
+
+  <div class="guide-footer">
+    <p><strong>DIY Yard Pro</strong> · diy-yard-pro.com · Written by Arturo (TheArt1986)</p>
+    <p style="margin-top:6px">© 2026 DIY Yard Pro. For personal use only. Please do not redistribute.</p>
+    <p style="margin-top:6px;font-size:11px">Affiliate Disclosure: Links on diy-yard-pro.com may earn a commission at no extra cost to you.</p>
+  </div>
+</div>
+
+</body>
+</html>
