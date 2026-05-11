@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+<linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3F7E48"/><stop offset="100%" stop-color="#1F5132"/></linearGradient>
+<linearGradient id="earthGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E4C47A"/><stop offset="100%" stop-color="#B98545"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" rx="230" fill="transparent"/>
+<circle cx="512" cy="512" r="430" fill="url(#greenGrad)"/>
+<circle cx="512" cy="512" r="394" fill="none" stroke="#F5E7C8" stroke-width="20" opacity="0.9"/>
+<path d="M122 710 C275 596 382 663 512 571 C655 469 780 548 902 430 L902 890 L122 890 Z" fill="url(#earthGrad)"/>
+<path d="M448 660 C493 624 545 615 590 650 L665 890 L360 890 Z" fill="#F7E4B0" opacity="0.95"/>
+<path d="M486 690 L565 678" stroke="#BD8B4D" stroke-width="18" stroke-linecap="round" opacity="0.75"/>
+<path d="M425 760 L620 745" stroke="#BD8B4D" stroke-width="18" stroke-linecap="round" opacity="0.75"/>
+<path d="M388 835 L645 817" stroke="#BD8B4D" stroke-width="18" stroke-linecap="round" opacity="0.75"/>
+<path d="M512 650 L480 890" stroke="#BD8B4D" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+<path d="M586 672 L590 890" stroke="#BD8B4D" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+<path d="M470 190 C635 165 738 245 742 367 C602 390 500 320 470 190 Z" fill="#A7D36B"/>
+<path d="M510 220 C580 275 640 318 720 350" stroke="#2F6B3F" stroke-width="22" stroke-linecap="round" opacity="0.65"/>
+<path d="M405 405 C450 300 510 235 585 195" stroke="#F5E7C8" stroke-width="36" stroke-linecap="round" opacity="0.95"/>
+<text x="512" y="555" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="205" font-weight="800" fill="#FFFFFF" letter-spacing="-8">DIY</text>
+</svg>
