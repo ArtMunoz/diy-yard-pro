@@ -4,7 +4,11 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\artbo\\\\OneDrive\\\\Desktop\\\\Landscaping-Blog\\\\diy-yard-pro\\\\diy-yard-pro\\\\diy-yard-pro-1\" -Recurse -File)",
       "Bash(Select-Object -ExpandProperty FullName)",
       "Bash(Sort-Object)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(grep -v \"^--$\")",
+      "Bash(git push *)"
     ]
   }
 }
